@@ -1,0 +1,1 @@
+docker build -t backend:v0.1 .
