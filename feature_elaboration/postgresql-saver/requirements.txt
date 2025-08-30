@@ -1,0 +1,46 @@
+# PostgreSQL Saver Implementation for LangGraph
+# Core dependencies for PostgreSQL checkpoint and store integration
+
+# Core LangGraph packages
+langgraph>=0.2.0
+langgraph-checkpoint-postgres>=0.1.0
+
+# Database drivers
+psycopg[binary,pool]>=3.0.0
+
+# Optional: Alternative database driver
+# psycopg2-binary>=2.9.0
+
+# Optional: Encryption support
+pycryptodome>=3.15.0
+
+# Optional: Development and testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+black>=22.0.0
+flake8>=5.0.0
+mypy>=1.0.0
+
+# Optional: Monitoring and logging
+structlog>=23.0.0
+prometheus-client>=0.16.0
+
+# Optional: Configuration management
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# Optional: Async support
+aiohttp>=3.8.0
+asyncio-mqtt>=0.11.0
+
+# Optional: Performance monitoring
+psutil>=5.9.0
+memory-profiler>=0.60.0
+
+# Optional: Database utilities
+sqlalchemy>=2.0.0
+alembic>=1.11.0
+
+# Optional: Containerization support
+docker>=6.0.0
+docker-compose>=1.29.0

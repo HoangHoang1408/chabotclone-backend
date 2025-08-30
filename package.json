@@ -20,6 +20,13 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@langchain/anthropic": "^0.3.26",
+    "@langchain/community": "^0.3.53",
+    "@langchain/core": "^0.3.72",
+    "@langchain/langgraph": "^0.4.7",
+    "@langchain/langgraph-checkpoint": "^0.1.1",
+    "@langchain/langgraph-checkpoint-sqlite": "^0.2.1",
+    "@langchain/openai": "^0.6.9",
     "@nestjs-modules/ioredis": "^2.0.2",
     "@nestjs/cache-manager": "^3.0.1",
     "@nestjs/common": "^11.0.1",
@@ -47,7 +54,8 @@
     "redis": "^5.8.2",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
-    "typeorm": "^0.3.25"
+    "typeorm": "^0.3.25",
+    "zod": "^4.1.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
