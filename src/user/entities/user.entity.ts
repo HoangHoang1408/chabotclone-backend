@@ -1,5 +1,6 @@
 import { IsEmail, IsString } from 'class-validator';
-import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
+import { Column, CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
+import { Conversation } from '../../chat_agents/entities/conversation.entity';
 
 export enum UserRole {
   ADMIN = 'admin',
@@ -28,4 +29,6 @@ export class User {
   @UpdateDateColumn()
   updatedAt: Date;
 
+  @OneToMany(() => Conversation, (conversation) => conversation.user, { cascade: true, eager: false, onDelete: 'CASCADE' })
+  conversations: Conversation[];
 }

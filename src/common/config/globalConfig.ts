@@ -19,4 +19,20 @@ export default () => ({
     password: process.env.REDIS_PASSWORD,
     db: parseInt(process.env.REDIS_DB || '0', 10),
   },
+  openai: {
+    apiKey: process.env.OPENAI_API_KEY,
+  },
+  brave: {
+    apiKey: process.env.BRAVE_SEARCH_API_KEY,
+  },
+  bullmq: {
+    chatAgentConcurrency: parseInt(process.env.BULLMQ_CHAT_AGENT_CONCURRENCY || '10', 10),
+    maxStalledCount: parseInt(process.env.BULLMQ_MAX_STALLED_COUNT || '1', 10),
+    maxStalledInterval: parseInt(process.env.BULLMQ_MAX_STALLED_INTERVAL || '10000', 10),
+  },
+  stream: {
+    ttl: parseInt(process.env.STREAM_TTL || '600', 10),
+    errorTtl: parseInt(process.env.STREAM_ERROR_TTL || '60', 10),
+    maxIdleTime: parseInt(process.env.STREAM_MAX_IDLE_TIME || '120', 10),
+  },
 }); 

@@ -3,7 +3,7 @@ version: '3.8'
 services:
   postgres:
     container_name: postgres_db
-    image: postgres:17.6-alpine
+    image: postgres:17.6
     restart: always
     environment:
       POSTGRES_USER: postgres
@@ -19,7 +19,7 @@ services:
   
   redis:
     container_name: redis_cache
-    image: redis:8.2.1-alpine
+    image: redis:8.2.1
     restart: always
     environment:
       - REDIS_PASSWORD=redis

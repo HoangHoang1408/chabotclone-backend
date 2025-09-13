@@ -4,5 +4,7 @@ alwaysApply: false
 
 We will discuss about how to implement feature in the current code base and gather the best practices for the feature. We will work in the folder ./feature_elaboration, create a subfolder and put all work in a markdown file in the subfolder.
 Note that:
-1) you should refer to the current tech stack in the codebase
-2) the implementation guides and practices should be production-grade
+0) You should refer to the current tech stack in the codebase
+1) You should carefully care first about the concepts and best practices to implement the feature and then the code
+2) The implementation guides and practices should be production-grade
+3) You should at least create a README.md file for general guides and then IMPLEMENTATION_GUIDE.md for detailed implementation
